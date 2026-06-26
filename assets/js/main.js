@@ -1,0 +1,1 @@
+const copyButton=document.getElementById('copyBib');if(copyButton){copyButton.addEventListener('click',async()=>{const bib=document.querySelector('#citation pre code')?.innerText||'';try{await navigator.clipboard.writeText(bib);copyButton.textContent='Copied!';setTimeout(()=>copyButton.textContent='Copy BibTeX',1600)}catch(e){copyButton.textContent='Select BibTeX above'}})}
