@@ -1,8 +1,20 @@
-# Large Language Models in Human–Robot Collaboration With Cognitive Validation Against Context-Induced Hallucinations
+# Nadun Ranasinghe academic website
 
-Static GitHub Pages project site for the IEEE Access paper.
+This is a multi-page GitHub Pages website.
 
-Acknowledgements section added with AI-DOC and AI-PRISM funding text.
+## Structure
 
-## Publish
-Upload these files to a GitHub repository, then enable **Settings → Pages → Deploy from a branch → main / root**.
+- `index.html` — homepage
+- `papers/cognivera/index.html` — project page for the CogniVera paper
+- `cv/index.html` — CV page
+- `assets/` — shared CSS, JavaScript, and images
+
+## Add future papers
+
+Create a new folder under `papers/`, for example:
+
+```text
+papers/new-paper/index.html
+```
+
+Then add the paper to the Publications section in `index.html`.
