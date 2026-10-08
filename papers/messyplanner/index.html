@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Progress page for the MessyPlanner research paper by Nadun Ranasinghe and supervisors.">
+  <title>MessyPlanner | Paper Progress</title>
+  <style>
+    :root{--navy:#07182c;--panel:#102844;--cyan:#55ddff;--cyan2:#1a9fd0;--text:#eef8ff;--muted:#a9bfd0;--line:rgba(85,221,255,.22);--green:#72e3ae;--amber:#ffc96b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:linear-gradient(145deg,#030910 0%,var(--navy) 55%,#06111e 100%);color:var(--text);line-height:1.65}
+    a{color:var(--cyan)} a:hover{color:white}.wrap{width:min(1100px,calc(100% - 36px));margin:auto}
+    nav{padding:22px 0;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800;color:white;text-decoration:none}.back{text-decoration:none;font-size:.94rem}
+    .hero{min-height:68vh;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;padding:55px 0 70px}
+    .eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--cyan);font-weight:800;font-size:.78rem}.badge{display:inline-block;margin-left:10px;padding:5px 10px;border:1px solid var(--line);border-radius:999px;color:var(--green);background:rgba(114,227,174,.08)}
+    h1{font-size:clamp(2.5rem,6vw,5.6rem);line-height:.98;margin:18px 0 24px;letter-spacing:-.05em}.lead{font-size:clamp(1.05rem,2vw,1.28rem);color:#d7e8f3;max-width:720px}
+    .authors{margin-top:26px;color:var(--muted)}.authors a{font-weight:700;text-decoration:none}.hero-img{width:100%;display:block;filter:drop-shadow(0 24px 42px rgba(0,210,255,.18));border-radius:28px}
+    section{padding:65px 0}.section-label{color:var(--cyan);text-transform:uppercase;letter-spacing:.14em;font-weight:800;font-size:.78rem}h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.15;margin:10px 0 28px}
+    .card{background:linear-gradient(145deg,rgba(16,40,68,.91),rgba(8,25,44,.86));border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+    .status-head{display:flex;justify-content:space-between;gap:20px;align-items:center}.status{color:var(--green);font-weight:800}.updated{color:var(--muted);font-size:.9rem}.progress{height:10px;background:#071523;border-radius:99px;overflow:hidden;margin:22px 0 8px}.progress span{display:block;height:100%;width:55%;background:linear-gradient(90deg,var(--cyan2),var(--cyan));border-radius:inherit}
+    .timeline{position:relative;margin-left:10px;padding-left:27px;border-left:2px solid var(--line)}.item{position:relative;padding:0 0 34px}.item:last-child{padding-bottom:0}.item:before{content:"";position:absolute;left:-35px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 6px rgba(85,221,255,.1)}.item.done:before{background:var(--green)}.item.current:before{background:var(--amber)}.item h3{margin:0 0 5px}.item p{margin:0;color:var(--muted)}.tag{display:inline-block;margin-top:8px;padding:3px 9px;border-radius:999px;font-size:.77rem;font-weight:800;background:rgba(85,221,255,.1);color:var(--cyan)}
+    .note{color:var(--muted);font-size:.94rem;margin-top:18px}.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:11px 16px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font-weight:700;background:rgba(85,221,255,.06)}footer{padding:34px 0 50px;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+    @media(max-width:780px){.hero{grid-template-columns:1fr;padding-top:30px}.hero-img{max-width:560px;margin:auto}.status-head{align-items:flex-start;flex-direction:column}nav{gap:15px}}
+  </style>
+</head>
+<body>
+  <header class="wrap"><nav><a class="brand" href="../../">Nadun Ranasinghe</a><a class="back" href="../../">← Back to homepage</a></nav></header>
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow">Research paper <span class="badge">In progress</span></div>
+        <h1>MessyPlanner</h1>
+        <p class="lead">Modality-specific transformer agents, an episodic-memory retrieval agent, and a Bayesian uncertainty specialist jointly analyse the user’s request. An aggregator fuses their evidence to generate the robot’s conversational response and a grounded symbolic task representation.</p>
+        <p class="authors">Nadun Ranasinghe · <a href="https://www.tuni.fi/en/people/jose-martinezlastra" target="_blank" rel="noopener noreferrer">Prof. Jose Martinez Lastra ↗</a> · <a href="https://www.tuni.fi/en/people/konstantinos-stefanidis" target="_blank" rel="noopener noreferrer">Prof. Konstantinos Stefanidis ↗</a></p>
+      </div>
+      <img class="hero-img" src="../../assets/img/messyplannerface.png" alt="Illustrated MessyPlanner expressive robot head with a camera and screen-based eyes">
+    </section>
+
+    <section class="wrap" id="progress">
+      <div class="section-label">Paper tracker</div><h2>Current progress</h2>
+      <div class="card">
+        <div class="status-head"><div><strong class="status">System development and evaluation</strong><div class="updated">Last updated: 8 October 2026</div></div><strong>55%</strong></div>
+        <div class="progress" aria-label="Paper progress: 55 percent"><span></span></div>
+        <p class="note">The percentage is a simple public-facing estimate. Update it only when a meaningful paper milestone is completed.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-label">Milestones</div><h2>Paper journey</h2>
+      <div class="card timeline">
+        <!-- To update: change classes among done, current, and planned; edit text; or copy an item block. -->
+        <article class="item done"><h3>Research concept and architecture</h3><p>Defined the multimodal specialist-agent, memory, uncertainty, evidence-fusion, conversational-response, and symbolic-task pipeline.</p><span class="tag">Completed</span></article>
+        <article class="item done"><h3>FCAI AI Day abstract and poster</h3><p>The research abstract was accepted for poster presentation at FCAI AI Day 2026.</p><span class="tag">Completed</span></article>
+        <article class="item current"><h3>System development and integration</h3><p>Implementing and validating the complete robotless multimodal interaction pipeline and its grounded symbolic task output.</p><span class="tag">In progress</span></article>
+        <article class="item"><h3>Human trials and evaluation</h3><p>Evaluate grounding, clarification behaviour, transparency, usability, and safe task interpretation.</p><span class="tag">Planned</span></article>
+        <article class="item"><h3>Manuscript preparation</h3><p>Consolidate the architecture, experimental method, results, discussion, and limitations into the full paper.</p><span class="tag">Planned</span></article>
+        <article class="item"><h3>Journal submission</h3><p>Prepare and submit the final manuscript.</p><span class="tag">Planned</span></article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="section-label">People</div><h2>Supervision</h2>
+      <div class="links"><a class="btn" href="https://www.tuni.fi/en/people/jose-martinezlastra" target="_blank" rel="noopener noreferrer">Prof. Jose Martinez Lastra ↗</a><a class="btn" href="https://www.tuni.fi/en/people/konstantinos-stefanidis" target="_blank" rel="noopener noreferrer">Prof. Konstantinos Stefanidis ↗</a></div>
+    </section>
+  </main>
+  <footer><div class="wrap">MessyPlanner paper progress · Nadun Ranasinghe · Tampere University</div></footer>
+</body>
+</html>
