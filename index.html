@@ -1,52 +1,295 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nadun Ranasinghe</title><meta name="description" content="Academic website of Nadun Ranasinghe"><link rel="stylesheet" href="assets/css/style.css"></head><body><header class="site-header"><div class="container nav"><a class="brand" href="index.html">Nadun Ranasinghe</a><nav class="nav-links"><a href="index.html#about">About</a><a href="index.html#research">Research</a><a href="index.html#papers">Papers</a><a href="cv/">CV</a><a href="index.html#contact">Contact</a></nav></div></header>
-<section class="hero"><div class="container"><h1>Nadun Ranasinghe</h1><p>Doctoral Researcher in trustworthy multimodal AI for human–robot collaboration</p><div class="buttons"><a class="button" href="#papers">View papers</a><a class="button secondary" href="cv/">View CV</a></div></div></section>
-<main class="container">
-<section id="about" class="section"><h2>About</h2>
-  <p>Originally from Sri Lanka, I moved to Finland to pursue my passion for robotics, human-computer interaction, and the future of intelligent systems. I am currently a doctoral researcher working at the intersection of AI, multimodal interaction, and human-robot collaboration, with a focus on building more natural, reliable, and human-centric ways for people and robots to work together.</p>
-  <p>My work spans the development of conversational AI interfaces for collaborative robots, the study of human behaviour during industrial assembly tasks, and the design of safe, trustworthy frameworks that bring large language models into real-world robotics. Through this research, I aim to bridge the gap between people and intelligent machines—empowering robots to understand, respond, and collaborate more like human teammates.</p>
-  <p>Outside the lab, I enjoy travelling, exploring new cultures, and taking time to recharge through fitness and outdoor activities. I’m driven by curiosity, creativity, and the belief that technology should make human life better, safer, and more meaningful. Always open to new ideas and collaborations, I’m excited about the possibilities that lie ahead—both in research and in life.</p>
-</section>
-<section id="research" class="section"><h2>Research Interests</h2><p>My research focuses on trustworthy multimodal AI for human–robot collaboration, using transformer-based models for context understanding, cognitive validation, ambiguity-aware interaction, and robot task planning in smart manufacturing.</p><p class="muted">Core areas: Multimodal Human-Robot Interaction, Human-Robot Collaboration, Transformer-based AI, Trustworthy AI, Cognitive Robotics, Robot Task Planning, and Smart Manufacturing.</p></section>
-<section id="papers" class="section"><h2>Publications</h2><div class="paper-list"><article class="paper-item"><p class="venue">IEEE Access, 2025</p><h3><a href="papers/cognivera/">Large Language Models in Human–Robot Collaboration With Cognitive Validation Against Context-Induced Hallucinations</a></h3><p class="muted">Nadun Ranasinghe, Wael M. Mohammed, Kostas Stefanidis, Jose L. Martinez Lastra</p><p>CogniVera introduces cognitive validation for reliable transformer/LLM-supported vocal human–robot collaboration.</p><div class="buttons"><a class="button" href="papers/cognivera/">Project page</a><a class="button secondary" href="https://doi.org/10.1109/ACCESS.2025.3565918">DOI</a></div></article></div></section>
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>
-    I am open to research discussions, academic collaboration, and opportunities
-    related to human–robot interaction, cognitive robotics, and intelligent
-    collaborative systems.
-  </p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nadun Ranasinghe</title>
+  <meta name="description" content="Academic website of Nadun Ranasinghe">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <div class="contact-links">
-    <p>
-      <strong>University Email:</strong>
-      <a href="mailto:nadun.ranasinghe@tuni.fi">nadun.ranasinghe@tuni.fi</a>
-    </p>
+  <style>
+    .publication-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
 
-    <p>
-      <strong>Personal Email:</strong>
-      <a href="mailto:nadun.rana@gmail.com">nadun.rana@gmail.com</a>
-    </p>
+    .publication-header .venue {
+      margin: 0;
+    }
 
-    <p>
-      <strong>ORCID:</strong>
-      <a href="https://orcid.org/0009-0007-5252-8818">
-        0009-0007-5252-8818
-      </a>
-    </p>
+    .publication-tag {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.4;
+      white-space: nowrap;
+    }
 
-    <p>
-      <strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/nadunrana/">
-        linkedin.com/in/nadunrana
-      </a>
-    </p>
+    .tag-first-author {
+      background: #dff7eb;
+      color: #176b45;
+    }
 
-    <p>
-      <strong>GitHub:</strong>
-      <a href="https://github.com/nadunrana">
-        github.com/nadunrana
-      </a>
-    </p>
-  </div>
-</section>
-</main><footer class="footer">© Nadun Ranasinghe. Built with GitHub Pages.</footer></body></html>
+    .tag-co-author {
+      background: #e8efff;
+      color: #3157a4;
+    }
+
+    .tag-development {
+      background: #fff2cc;
+      color: #805b00;
+    }
+
+    .paper-title-prefix {
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Nadun Ranasinghe</a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#papers">Papers</a>
+        <a href="cv/">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Nadun Ranasinghe</h1>
+      <p>Doctoral Researcher in trustworthy multimodal AI for human–robot collaboration</p>
+
+      <div class="buttons">
+        <a class="button" href="#papers">View papers</a>
+        <a class="button secondary" href="cv/">View CV</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About</h2>
+
+      <p>
+        Originally from Sri Lanka, I moved to Finland to pursue my passion for
+        robotics, human-computer interaction, and the future of intelligent
+        systems. I am currently a doctoral researcher working at the intersection
+        of AI, multimodal interaction, and human-robot collaboration, with a
+        focus on building more natural, reliable, and human-centric ways for
+        people and robots to work together.
+      </p>
+
+      <p>
+        My work spans the development of conversational AI interfaces for
+        collaborative robots, the study of human behaviour during industrial
+        assembly tasks, and the design of safe, trustworthy frameworks that
+        bring transformer-based models into real-world robotics. Through this
+        research, I aim to bridge the gap between people and intelligent
+        machines, enabling robots to understand, respond, and collaborate more
+        effectively as human teammates.
+      </p>
+
+      <p>
+        Outside the lab, I enjoy travelling, exploring new cultures, and taking
+        time to recharge through fitness and outdoor activities. I’m driven by
+        curiosity, creativity, and the belief that technology should make human
+        life better, safer, and more meaningful. Always open to new ideas and
+        collaborations, I’m excited about the possibilities that lie ahead,
+        both in research and in life.
+      </p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Interests</h2>
+
+      <p>
+        My research focuses on trustworthy multimodal AI for human–robot
+        collaboration, using transformer-based models for context understanding,
+        cognitive validation, ambiguity-aware interaction, uncertainty-aware
+        evidence fusion, and robot task planning in smart manufacturing.
+      </p>
+
+      <p class="muted">
+        Core areas: Multimodal Human-Robot Interaction, Human-Robot
+        Collaboration, Transformer-Based AI, Trustworthy AI, Cognitive
+        Robotics, Robot Task Planning, and Smart Manufacturing.
+      </p>
+    </section>
+
+    <section id="papers" class="section">
+      <h2>Publications and Ongoing Research</h2>
+
+      <div class="paper-list">
+        <article class="paper-item">
+          <div class="publication-header">
+            <p class="venue">IEEE Access, 2025</p>
+            <span class="publication-tag tag-first-author">First Author</span>
+          </div>
+
+          <h3>
+            <a href="papers/cognivera/">
+              Large Language Models in Human–Robot Collaboration With
+              Cognitive Validation Against Context-Induced Hallucinations
+            </a>
+          </h3>
+
+          <p class="muted">
+            Nadun Ranasinghe, Wael M. Mohammed, Kostas Stefanidis,
+            and Jose L. Martinez Lastra
+          </p>
+
+          <p>
+            CogniVera introduces cognitive validation for reliable
+            transformer-supported vocal human–robot collaboration.
+          </p>
+
+          <div class="buttons">
+            <a class="button" href="papers/cognivera/">Project page</a>
+            <a
+              class="button secondary"
+              href="https://doi.org/10.1109/ACCESS.2025.3565918"
+              target="_blank"
+              rel="noopener noreferrer"
+            >DOI</a>
+          </div>
+        </article>
+
+        <article class="paper-item">
+          <div class="publication-header">
+            <p class="venue">IEEE Robotics and Automation Letters, 2024</p>
+            <span class="publication-tag tag-co-author">Co-Author</span>
+          </div>
+
+          <h3>
+            Safety-Guaranteed Distributed Formation Control of Multi-Robot
+            Systems Over Graphs With Rigid and Elastic Edges
+          </h3>
+
+          <p class="muted">
+            H. Pham, Nadun Ranasinghe, D. Le, M. W. S. Atman,
+            and A. Gusrialdi
+          </p>
+
+          <p>
+            A distributed formation-control approach for multi-robot systems
+            with safety guarantees over graphs containing rigid and elastic
+            edges.
+          </p>
+
+          <div class="buttons">
+            <a
+              class="button secondary"
+              href="https://doi.org/10.1109/LRA.2024.3471460"
+              target="_blank"
+              rel="noopener noreferrer"
+            >DOI</a>
+          </div>
+        </article>
+
+        <article class="paper-item">
+          <div class="publication-header">
+            <p class="venue">FCAI AI Day 2026 · Ongoing Research</p>
+            <span class="publication-tag tag-development">Currently Under Development</span>
+          </div>
+
+          <h3>
+            <a href="papers/messyplanner/">
+              <span class="paper-title-prefix">MAKING ROBOT BELIEFS VISIBLE:</span>
+              A Camera-Aware Expressive Head for Multimodal Cognitive Validation
+            </a>
+          </h3>
+
+          <p class="muted">
+            Nadun Ranasinghe, Jose L. Martinez Lastra,
+            and Konstantinos Stefanidis
+          </p>
+
+          <p>
+            Modality-specific transformer agents, an episodic-memory retrieval
+            agent, and a Bayesian uncertainty specialist jointly analyse the
+            user’s request. An aggregator then fuses their evidence to generate
+            the robot’s conversational response and a grounded symbolic task
+            representation.
+          </p>
+
+          <div class="buttons">
+            <a class="button" href="papers/messyplanner/">
+              View research progress
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+
+      <p>
+        I am open to research discussions, academic collaboration, and
+        opportunities related to human–robot interaction, cognitive robotics,
+        and intelligent collaborative systems.
+      </p>
+
+      <div class="contact-links">
+        <p>
+          <strong>University Email:</strong>
+          <a href="mailto:nadun.ranasinghe@tuni.fi">nadun.ranasinghe@tuni.fi</a>
+        </p>
+
+        <p>
+          <strong>Personal Email:</strong>
+          <a href="mailto:nadun.rana@gmail.com">nadun.rana@gmail.com</a>
+        </p>
+
+        <p>
+          <strong>ORCID:</strong>
+          <a
+            href="https://orcid.org/0009-0007-5252-8818"
+            target="_blank"
+            rel="noopener noreferrer"
+          >0009-0007-5252-8818</a>
+        </p>
+
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/in/nadunrana/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >linkedin.com/in/nadunrana</a>
+        </p>
+
+        <p>
+          <strong>GitHub:</strong>
+          <a
+            href="https://github.com/nadunrana"
+            target="_blank"
+            rel="noopener noreferrer"
+          >github.com/nadunrana</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; <span id="current-year"></span> Nadun Ranasinghe. Built with GitHub Pages.
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
